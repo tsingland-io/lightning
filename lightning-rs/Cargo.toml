@@ -1,0 +1,22 @@
+[package]
+name = "lightning-rs"
+version = "0.1.0"
+edition = "2021"
+description = "Framework for Quantitative Finance and Algorithmic Trading"
+license = "Apache-2.0"
+readme = "README.md"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+env_logger = "0.9.0"
+lightning-core = { path = "../lightning-core" }
+log = { workspace = true }
+ahash = { version = "0.8", features = ["serde"]}
+crossbeam = "0.8"
+ulid = { workspace = true }
+rust_decimal = "1.28"
+rust_decimal_macros = "1.28"
+dashmap = { version = "5.4.0", features = ["serde"]}
+arc-swap = "1.6.0"
+im = "15.1.0"
+chrono = { version = "0.4.23", features = ["serde"]}

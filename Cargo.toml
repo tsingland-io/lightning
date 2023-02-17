@@ -1,0 +1,13 @@
+[workspace]
+members = [
+    "lightning-rs",
+    "lightning-core",
+    "lightning-ffi",
+]
+
+[workspace.package]
+version = "0.1.0"
+
+[workspace.dependencies]
+log = "0.4"
+ulid = { version = "1.0", features = ["serde", "uuid"]}
